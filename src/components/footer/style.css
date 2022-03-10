@@ -1,0 +1,23 @@
+.footer{
+    background: #300080;
+    color: white;
+}
+
+.social-media-name{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icons a{
+    margin-right: 1rem;
+}
+
+.social-media-icons a img{
+    width: 80%;
+}
