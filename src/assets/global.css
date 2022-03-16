@@ -13,6 +13,8 @@
     --footer-name-application: 300 22px Josefin Sans, sans-serif;
     --link-nav-font: 300 22px Josefin Sans, sans-serif;
     --home-card-btn-font: 300 20px Lato, sans-serif;
+    --forgot-pass: 300 18px Josefin Sans, sans-serif;
+
     --button-login-font: 400 14px Josefin Sans, sans-serif;
 }
 
@@ -26,4 +28,8 @@
 a {
     text-decoration: none;
     color: white;
+}
+
+fieldset{
+    border: none;
 }
