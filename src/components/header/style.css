@@ -1,0 +1,38 @@
+header {
+    background: var(--menu-color);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+header .logo {
+    padding: 1.125rem 0 1.125rem 3rem;
+    font: var(--logo-font);
+}
+    
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .link {
+    margin-right: 9rem;
+    font: var(--link-nav-font);
+}
+nav .login-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 0.5rem 0;
+}
+nav .login-button img {
+    width: 80%;
+}
+
+
+nav .login-button span {
+    margin-top: -1.4rem;
+    color: black;
+    font: var(--button-login-font);
+}
