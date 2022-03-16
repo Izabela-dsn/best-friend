@@ -4,13 +4,16 @@
     --pink-opaque: #fcdcc7;
     --text-color: #ffffff;
   
-    --logo-font: 300 34px Josefin Sans, sans-serif;
-    --link-nav-font: 300 22px Josefin Sans, sans-serif;
-    --button-login-font: 400 14px Josefin Sans, sans-serif;
     --home-card-title-font: 300 68px Josefin Sans, sans-serif;
-    --home-card-p-font: 400 26px Josefin Sans, sans-serif;
-    --home-card-btn-font: 300 20px Lato, sans-serif;
     --benefit-title: 300 50px Josefin Sans, sans-serif;
+    --logo-font: 300 34px Josefin Sans, sans-serif;
+    --label: 300 22px Josefin Sans, sans-serif;
+    --input: 300 24px Josefin Sans, sans-serif;
+    --home-card-p-font: 400 26px Josefin Sans, sans-serif;
+    --footer-name-application: 300 22px Josefin Sans, sans-serif;
+    --link-nav-font: 300 22px Josefin Sans, sans-serif;
+    --home-card-btn-font: 300 20px Lato, sans-serif;
+    --button-login-font: 400 14px Josefin Sans, sans-serif;
 }
 
 * {

@@ -29,10 +29,6 @@ nav .login-button {
 nav .login-button img {
     width: 80%;
 }
-
-
 nav .login-button span {
-    margin-top: -1.4rem;
-    color: black;
     font: var(--button-login-font);
 }

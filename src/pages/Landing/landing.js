@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
 import "../../assets/global.css";
 import "./style.css";
 import banner from "../../assets/banner.svg";
-import arrow from "../../assets/arrow.svg"
+import arrow from "../../assets/arrow.svg";
 
 const Home = () => {
-
   return (
     <div className="home">
       <Header />
@@ -63,13 +62,28 @@ const Home = () => {
             </section>
           </div>
         </div>
+
         <div id="know-more">
           <h2 className="title">Saiba Mais</h2>
           <p>Ficou interessado ?</p>
-          <p>Se inscreva na nossa newsletter animal para ficar sabendo sobre as novidades por aqui e muito mais!</p>
-          <label htmlFor="input-email"></label>
-          <input type="email" name="email" id="input-email" />
-          <button type="submit"><img src={arrow} alt="enviar email" /></button>
+          <p>
+            Se inscreva na nossa newsletter animal <br/> para ficar sabendo sobre as
+            novidades por aqui  <br/> e muito mais!
+          </p>
+          <form action="mailto:izabeladasilva10@gmail.com">
+            <fieldset>
+              <label htmlFor="input-email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                placeholder="exemplo@email.com"
+              />
+            </fieldset>
+            <button type="submit">
+              <img src={arrow} alt="enviar email" />
+            </button>
+          </form>
         </div>
       </main>
       <Footer />

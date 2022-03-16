@@ -16,6 +16,7 @@
   align-items: center;
   text-align: center;
 }
+
 .home-card .title {
   padding: 3rem 2rem;
   font: var(--home-card-title-font);
@@ -48,7 +49,8 @@
   margin: 10rem 5rem;
 }
 
-#benefit .title {
+#benefit .title,
+#know-more .title {
   text-align: center;
   font: var(--benefit-title);
   margin-bottom: 6.8rem;
@@ -98,4 +100,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#know-more {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 10rem auto;
+}
+
+#know-more p{
+  font: var(--logo-font);
+}
+
+#know-more form {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+#know-more fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#know-more label {
+  text-align: left;
+  font: var(--label);
+}
+
+#know-more input {
+  width: 50vw;
+  padding: 0.3rem 0.5rem;
+  border-style: none none solid;
+  font: var(--input);
+}
+
+#know-more button{
+  padding: 0.3rem 2rem;
+  background: transparent;
+  border: 1px solid var(--menu-color);
+  border-radius: 0.3rem;
 }

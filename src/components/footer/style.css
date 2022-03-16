@@ -1,23 +1,32 @@
-.footer{
-    background: #300080;
-    color: white;
+.footer {
+  background: var(--menu-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font: var(--footer-name-application);
 }
 
-.social-media-name{
-    padding: 2rem 5rem;
-    display: flex;
-    justify-content: space-between;
+.social-media-name {
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
 }
 
-.social-media-icons{
-    display: flex;
-    align-items: center;
+.social-media-icons {
+  display: flex;
+  align-items: center;
 }
 
-.social-media-icons a{
-    margin-right: 1rem;
+.social-media-icons a {
+  margin-right: 1rem;
 }
 
-.social-media-icons a img{
-    width: 80%;
+.social-media-icons a img {
+  width: 80%;
+}
+
+.rights {
+  text-align: center;
 }
