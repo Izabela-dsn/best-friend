@@ -1,0 +1,51 @@
+.profile main{
+    margin: 2rem 5rem;
+}
+
+.profile .pets{
+    margin: 5rem 0 5rem 0 ;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pet button{
+    padding: 1rem;
+    background: #C4ACFF;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.profile .about{
+    margin-top: 2rem;
+}
+
+.profile .about-basic-information{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.medical-history{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.history{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+    background: transparent;
+    border: 1.5px solid #C4ACFF; 
+    border-radius: .5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.history img{
+    margin-right: 2rem;
+}
+
+/**/
