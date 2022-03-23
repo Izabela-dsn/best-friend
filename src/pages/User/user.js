@@ -7,29 +7,24 @@ import vacinasRemediosIcon from "../../assets/vacinaRemedios.svg";
 import examIcon from "../../assets/estetoscopio.svg";
 import vetIcon from "../../assets/clinica.svg";
 import cirurgiaIcon from "../../assets/cirurgias.svg";
+import CardInsertData from "../../components/cardInsertData";
 
 const User = () => {
-  const [buttons, setButtons] = useState(
+  const [categories, setCategories] = useState(
+    " ",
     "medicineVaccine",
     "exams",
     "veterinary",
     "surgeries"
-  )
-  
-  //Botões do historico médico
-  var viewBtnOne = () => {
-    setButtons("medicineVaccine");
-  };
-  var viewBtnTwo = () => {
-    setButtons("exams");
-  };
-  var viewBtnThree = () => {
-    setButtons("veterinary");
-  };
-  var viewBtnFour = () => {
-    setButtons("surgeries");
-  };
-  
+  );
+
+  const [openForms, setOpenForms] = useState(
+    " ",
+    "formMedicineVaccine",
+    "formExams",
+    "formVeterinary",
+    "formSurgeries"
+  );
 
   return (
     <div className="profile">
@@ -49,64 +44,100 @@ const User = () => {
           </div>
         </div>
 
-       
         <section className="about">
-            <hr />
-            <div className="about-basic-information">
-              <p className="pet-name">Nome - Nina</p>
-              <p className="pet-years">Idade - 11 anos</p>
-              <p className="pet-weight">Peso - 8 KG</p>
-            </div>
+          <hr />
+          <div className="about-basic-information">
+            <p className="pet-name">Nome - Nina</p>
+            <p className="pet-years">Idade - 11 anos</p>
+            <p className="pet-weight">Peso - 8 KG</p>
+          </div>
 
-            <div className="medical-history">
-              <button className="history" onClick={viewBtnOne}>
+          <div className="medical-history">
+            <section>
+              <button
+                className="history vaccines-medicines"
+                onClick={() => setCategories("medicineVaccine")}
+              >
                 <img src={vacinasRemediosIcon} alt="Vacina e remédio" />
                 Vacinas/Remédios
               </button>
 
-              {buttons === "medicineVaccine" && (
+              {categories === "medicineVaccine" && (
                 <div className="vaccines-medicines">
-                  <ul> 
-                    
-                  </ul>
+                  <ul></ul>
+                  <button onClick={() => setOpenForms("formMedicineVaccine")}>
+                    Add
+                  </button>
+                  {openForms === "formMedicineVaccine" && (
+                    <CardInsertData type={categories} />
+                  )}
                 </div>
               )}
+            </section>
 
-              <button className="history exams" onClick={viewBtnTwo}>
+            <section>
+              <button
+                className="history exams"
+                onClick={() => setCategories("exams")}
+              >
                 <img src={examIcon} />
                 Exames
               </button>
 
-              {buttons === "exams" && (
+              {categories === "exams" && (
                 <div className="exams">
                   <ul></ul>
+                  <button onClick={() => setOpenForms("formExams")}>Add</button>
+                  {openForms === "formExams" && (
+                    <CardInsertData type={categories} />
+                  )}
                 </div>
               )}
+            </section>
 
-              <button className="history veterinary" onClick={viewBtnThree}>
+            <section>
+              <button
+                className="history veterinary"
+                onClick={() => setCategories("veterinary")}
+              >
                 <img src={vetIcon} />
                 Idas ao veterinário(a)
               </button>
 
-              {buttons === "veterinary" && (
+              {categories === "veterinary" && (
                 <div className="veterinary">
                   <ul></ul>
+                  <button onClick={() => setOpenForms("formVeterinary")}>
+                    Add
+                  </button>
+                  {openForms === "formVeterinary" && (
+                    <CardInsertData type={categories} />
+                  )}
                 </div>
               )}
+            </section>
 
-              <button className="history surgeries" onClick={viewBtnFour}>
-                <img src={cirurgiaIcon} />
-                Cirurgias
-              </button>
+            <button
+              className="history surgeries"
+              onClick={() => setCategories("surgeries")}
+            >
+              <img src={cirurgiaIcon} />
+              Cirurgias
+            </button>
 
-              {buttons === "surgeries" && (
-                <div className="surgeries">
-                  <ul></ul>
-                </div>
-              )}
-            </div>
-        </section> 
-      
+            {categories === "surgeries" && (
+              <div className="surgeries">
+                <ul></ul>
+                <button onClick={() => setOpenForms("formSurgeries")}>
+                    Add
+                  </button>
+                  {openForms === "formSurgeries" && (
+                    <CardInsertData type={categories} />
+                  )}
+              </div>
+            )}
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
