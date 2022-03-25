@@ -1,0 +1,28 @@
+.cardsData form{
+    display: flex;
+    flex-direction: column;
+}
+.cardsData fieldset{
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.cardsData input,
+.cardsData select{
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   border: 1px solid var(--menu-color);
+}
+
+.cardsData button{
+    width: 10%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    background: #C4ACFF;
+    cursor: pointer;
+    text-align: center;
+    
+}

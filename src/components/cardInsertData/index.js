@@ -1,10 +1,11 @@
+import "./style.css"
 const CardInsertData = (props) => {
   return (
-    <div>
+    <div className="cardsData">
       {props.type === "medicineVaccine" && (
         <form>
           <fieldset>
-            <label htmlFor="type">Escolha:</label>
+            <label htmlFor="type">Escolha o tipo:</label>
             <select name="Tipo" id="type">
               <option value="Vacina">Vacina</option>
               <option value="Remedio">Remédio</option>
@@ -12,7 +13,7 @@ const CardInsertData = (props) => {
           </fieldset>
 
           <fieldset>
-            <label htmlFor="nameVacRem">Nome</label>
+            <label htmlFor="nameVacRem">Nome da Vacina ou Remédio</label>
             <input type="text" name="nameVacRem" id="nameVacRem" />
           </fieldset>
 
@@ -20,6 +21,8 @@ const CardInsertData = (props) => {
             <label htmlFor="time">Data</label>
             <input type="date" name="Data" id="time" />
           </fieldset>
+
+          <button>Salvar</button>
         </form>
       )}
 
@@ -39,6 +42,8 @@ const CardInsertData = (props) => {
             <label htmlFor="time">Data</label>
             <input type="date" name="" id="time" />
           </fieldset>
+
+          
         </form>
       )}
       {props.type === "veterinary" && (
