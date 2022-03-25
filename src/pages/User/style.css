@@ -39,7 +39,7 @@
     padding: 1rem;
     background: transparent;
     border: 1.5px solid #C4ACFF; 
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -48,4 +48,18 @@
     margin-right: 2rem;
 }
 
+.list{
+    height: 15rem;
+    overflow: auto;
+}
+
+.btnForms{
+    width: 10%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 45%;
+    background: #C4ACFF;
+    cursor: pointer;
+    text-align: center;
+}
 /**/
