@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "users": [
+      {
+        "id": 1,
+        "name": "Roseli",
+        "email": "liso@gmail.com",
+        "password": "abacate123"
+      }
+    ],
+    "pets": [
+      {
+        "id": 1,
+        "ownerId": 1,
+        "name": "Nina",
+        "years": 11,
+        "weight": 8,
+        "medicineVaccine": [
+          {
+            "id": 1,
+            "typeOf": "",
+            "name": "",
+            "date": ""
+          }
+        ],
+        "exams": [
+          {
+            "id": 1,
+            "place": "",
+            "name": "",
+            "date": ""
+          }
+        ],
+        "veterinary": [
+          {
+            "id": 1,
+            "place": "",
+            "name": "",
+            "date": ""
+          }
+        ],
+        "surgeries": [
+          {
+            "id": 1,
+            "placeAndDoctor": "",
+            "name": "",
+            "date": ""
+          }
+        ]
+      }
+    ]
+  }
+}
