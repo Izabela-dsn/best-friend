@@ -1,8 +1,10 @@
+import "./style.css"
+
 const EventCard = props =>{
     return(
-        <li>
+        <li className="cardEvent">
             <div className="names">
-                <span>{props.typeOfHistory}</span>
+                <span>{props.locationNameOrType}</span>
                 <p>{props.names}</p>
             </div>
             <div className="time">
