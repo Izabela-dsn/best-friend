@@ -8,8 +8,14 @@
     justify-content: space-around;
 }
 
+.pet{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 .pet button{
+    margin-left: 1rem;
     padding: 1rem;
     background: #C4ACFF;
     border: none;

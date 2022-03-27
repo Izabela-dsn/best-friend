@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate  } from "react-router-dom";
 import api from "../../services/api";
 
@@ -10,29 +10,26 @@ import "./style.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [users, setUsers] = useState([]);
   const navigate = useNavigate()
-
-  useEffect(() => {
+ 
+  async function handleLogin(e){
+    e.preventDefault();
     try {
-      api.get("/profile").then((response) => {
-        const info = response.data;
-        info.users.map((user)=>{
-          setUsers(user)
+      api.get("/users").then((response) => {
+        var info = response.data;
+        info.map((user)=>{
+          //console.log(user.id)
+          if(user.email === email || user.password === password){
+            navigate('/user', {state:{detail: `${user.id}`}})
+          }
+          return true;
         })
       });
     } catch {
       window.alert("Oh no");
     }
-  }, []);
-
-  function auth(e){
-    e.preventDefault();
-    console.log(users)
-    if(users.email === email || users.password === password){
-      navigate(`/user`, {detail: users.id})
-    }
   }
+
   
   return (
     <div className="login">
@@ -57,7 +54,7 @@ const Login = () => {
             Esqueci minha senha
           </a>
 
-          <button className="a" onClick={auth}>Entrar</button>
+          <button className="a" onClick={handleLogin}>Entrar</button>
           {/*<Link to="#" className="a" >
             Entrar </Link>*/}
         </form>
