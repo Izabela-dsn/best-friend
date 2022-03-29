@@ -109,7 +109,7 @@ const User = () => {
     setCategories("surgeries");
     try {
       api.get("/surgeries").then((response) => {
-        console.log(response);
+        //console.log(response);
         setMedicalHistorySurgeries(response.data);
       });
     } catch (error) {

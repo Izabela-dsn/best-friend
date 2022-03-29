@@ -17,7 +17,7 @@ const CardInsertData = (props) => {
     const dateRaw = e.target.value
     const parsed = parseISO(dateRaw)
     const result = format(parsed, "do 'de' MMMM 'de' yyyy", {locale: ptBR})
-    console.log(result)
+    //console.log(result)
     setDate(result)
   }
 
@@ -25,12 +25,12 @@ const CardInsertData = (props) => {
     e.preventDefault();
     if(props.type === "medicineVaccine"){
       var infosVaccineMedicine = {"typeOf": typeVacMed, "name":name, "date": date, "idPet":props.idPet}
-      console.log(infosVaccineMedicine)
+      //console.log(infosVaccineMedicine)
 
       try{
         var response = api.post(`/medicineVaccine`, infosVaccineMedicine,
         {headers:{"Content-Type":"application/json"}});
-        console.log(response.data);
+        //console.log(response.data);
         window.alert("Sucesso! Atualize a página.")
       }
       catch{
@@ -40,13 +40,13 @@ const CardInsertData = (props) => {
     }
     if(props.type === "exams"){
       var infosExams = {"place": location, "nameExam": name, "date": date, "idPet":props.idPet}
-      console.log(infosExams)
+      //console.log(infosExams)
 
       
       try{
         var response = api.post(`/exams`, infosExams,
         {headers:{"Content-Type":"application/json"}});
-        console.log(response.data);
+        //console.log(response.data);
         window.alert("Sucesso! Atualize a página.")
       }
       catch{
@@ -55,13 +55,13 @@ const CardInsertData = (props) => {
     }
     if(props.type === "veterinary"){
       var infosVet = {"place": location, "nameVet": name, "date": date, "idPet":props.idPet}
-      console.log(infosVet)
+      //console.log(infosVet)
 
       
       try{
         var response = api.post(`/veterinary`, infosVet,
         {headers:{"Content-Type":"application/json"}});
-        console.log(response.data);
+        //console.log(response.data);
         window.alert("Sucesso! Atualize a página.")
       }
       catch{
@@ -71,12 +71,12 @@ const CardInsertData = (props) => {
     }
     if(props.type === "surgeries"){
       var infosSurg = {"placeAndDoctor": nameAndLocation, "nameSurgery": name, "date": date, "idPet":props.idPet}
-      console.log(infosSurg)
+      //console.log(infosSurg)
       
       try{
         var response = api.post(`/surgeries`, infosSurg,
         {headers:{"Content-Type":"application/json"}});
-        console.log(response.data);
+        //console.log(response.data);
         window.alert("Sucesso! Atualize a página.")
       }
       catch{

@@ -7,15 +7,15 @@ const EventCard = (props) => {
     id = props.id;
     console.log(category)
     if (category === "medicineVaccine") {
-      console.log(id)
+      //console.log(id)
       try {
         var response = api.delete(`/medicineVaccine/${id}`, {
           headers: { "Content-Type": "application/json" },
         });
-        console.log(response.data.status);
+
         window.alert("Sucesso! Atualize a página.");
-      } catch {
-        window.alert("Não foi posssivel apagar tente novamente mais tarde.");
+      } catch(error) {
+        window.alert("Não foi posssivel apagar tente novamente mais tarde.", error);
       }
     }
     if (category === "exams") {
@@ -23,7 +23,7 @@ const EventCard = (props) => {
         var response = api.delete(`/exams/${id}`, {
           headers: { "Content-Type": "application/json" },
         });
-        console.log(response.data.status);
+        console.log(response.data);
         window.alert("Sucesso! Atualize a página.");
       } catch {
         window.alert("Não foi posssivel apagar tente novamente mais tarde.");
