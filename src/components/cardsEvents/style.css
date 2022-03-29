@@ -2,11 +2,20 @@
     display: flex;
     justify-content: space-around;
     background: white;
-    width: 60%;
+    width: 70%;
     align-items: center;
     margin: 1rem auto;
     padding: 1rem 0;
     border-radius: 0.5rem;
     border: 1px solid var(--pink-opaque);
     box-shadow: 5px 5px 2.5px var(--dark-pink);
+}
+
+.btn{
+    width: 10%;
+    padding: 0.5rem;
+    background: #C4ACFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
 }

@@ -116,6 +116,7 @@ const User = () => {
       window.alert("nooooo");
     }
   }
+
   return (
     <div className="profile">
       <Header />
@@ -178,6 +179,8 @@ const User = () => {
                                       locationNameOrType={card.typeOf}
                                       names={card.name}
                                       time={card.date}
+                                      id={card.id}
+                                      category={categories}
                                     ></EventCard>
                                   );
                                 }
@@ -217,6 +220,8 @@ const User = () => {
                                       locationNameOrType={card.place}
                                       names={card.nameExam}
                                       time={card.date}
+                                      id={card.id}
+                                      category={categories}
                                     ></EventCard>
                                   );
                                 }
@@ -259,6 +264,8 @@ const User = () => {
                                       locationNameOrType={card.place}
                                       names={card.nameVet}
                                       time={card.date}
+                                      id={card.id}
+                                      category={categories}
                                     ></EventCard>
                                   );
                                 }
@@ -301,6 +308,8 @@ const User = () => {
                                       locationNameOrType={card.placeAndDoctor}
                                       names={card.nameSurgery}
                                       time={card.date}
+                                      id={card.id}
+                                      category={categories}
                                     ></EventCard>
                                   );
                                 }
