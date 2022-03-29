@@ -25,34 +25,6 @@
   ],
   "medicineVaccine": [
     {
-      "id": 1,
-      "idPet": 1,
-      "typeOf": "Vacina",
-      "name": "T10",
-      "date": "14 de Agosto de 2021"
-    },
-    {
-      "typeOf": "Vacina",
-      "idPet": 1,
-      "name": "V10",
-      "date": "15º de março de 2022",
-      "id": 2
-    },
-    {
-      "typeOf": "Vacina",
-      "name": "V11",
-      "date": "14º de março de 2022",
-      "idPet": 1,
-      "id": 3
-    },
-    {
-      "typeOf": "Vacina",
-      "name": "V8",
-      "date": "30º de março de 2022",
-      "idPet": 1,
-      "id": 4
-    },
-    {
       "typeOf": "Vacina",
       "name": "V10",
       "date": "30º de março de 2022",
@@ -88,23 +60,8 @@
       "id": 9
     }
   ],
-  "exams": [
-    {
-      "id": 1,
-      "idPet": 1,
-      "place": "Triovet",
-      "nameExam": "Ultrassom",
-      "date": "14 de Julho de 2022"
-    }
-  ],
+  "exams": [],
   "veterinary": [
-    {
-      "id": 1,
-      "idPet": 1,
-      "place": "Triovet",
-      "nameVet": "Ana Paula",
-      "date": "10 de Janeiro 2014"
-    },
     {
       "place": "PetUdi",
       "nameVet": "Marina Camargo",
@@ -113,13 +70,5 @@
       "id": 2
     }
   ],
-  "surgeries": [
-    {
-      "id": 1,
-      "idPet": 1,
-      "placeAndDoctor": "Triovet Marcos Vinicios",
-      "nameSurgery": "Mastectomia",
-      "date": "10 de Novembro de 2015"
-    }
-  ]
+  "surgeries": []
 }
